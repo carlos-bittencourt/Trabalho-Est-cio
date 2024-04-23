@@ -1,0 +1,117 @@
+/* Formatação da área para agrupar os painéis das receitas */
+.receitas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 10px;
+}
+
+/* Formatação dos painéis de receitas */
+.receita {
+    width: 261px; /* Largura fixa dos painéis */
+    height: -400px;
+    background-color: #ebc798;
+    padding: 20px;
+    margin-top: -140px;
+    border-radius: 8px;
+}
+
+/* Formatação para o nome da receita */
+.receita h2 {
+    margin: 10px;
+}
+
+/* Formatação para a foto do prato */
+.receita img {
+    width: 250px;
+    height: 120px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+/* Linha de separação dos itens e modo de preparo */
+ul#li1::after {
+    content: '';
+    position: relative;
+    display: block;
+    left: -55px;
+    height: 2px;
+    width: 132%;
+    margin-top: 29px;
+    background-color: #4b4941;
+}
+
+ul#li2::after {
+    content: '';
+    position: relative;
+    display: block;
+    left: -55px;
+    height: 2px;
+    width: 132%;
+    margin-top: 11px;
+    background-color: #4b4941;
+}
+
+ul#li3::after {
+    content: '';
+    position: relative;
+    display: block;
+    left: -55px;
+    height: 2px;
+    width: 132%;
+    margin-top: 10px;
+    background-color: #4b4941;
+}
+
+/* Formatação para o modo de preparo */
+.receita p {
+    margin-top: 11px;
+}
+
+.receita p2 {
+    margin-top: 11px;
+}
+
+/* Estilo para a barra de rolagem */
+.receitas-container::-webkit-scrollbar {
+    width: 8px;
+}
+    
+.receitas-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    gap: 2px;
+    padding: 20px;
+    overflow-y: -10px; /* Adiciona barra de rolagem vertical */
+    max-height: calc(100vh - 200px); /* Altura máxima com espaço para cabeçalho e rodapé */
+}
+
+main {
+    padding: 20px;
+    margin: 125px;
+    text-align: center; 
+}
+
+.container {
+    width: 50px;
+    height: 50px;
+}
+  
+.foto {
+    width: 1366px;
+    height: 542px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+/* Formatação do rodapé */
+.rodape {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    width: 101%;
+    padding: 3px 0;
+    margin-top: -127px;
+}
